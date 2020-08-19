@@ -1,4 +1,21 @@
 .footer {
-    min-height: 15vh;
-    background-color: white;
+    height:10vh;
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   font-size:2rem;
+   padding:1rem;
+   @media(max-width:100rem){
+font-size:1.6rem;
 }
+@media(max-width:50rem){
+    font-size:1rem;
+    }
+   &__info{
+
+   color:white;
+   &:link, &:visited{
+       text-decoration: none;
+   }
+}}

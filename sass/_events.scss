@@ -5,12 +5,16 @@
     padding: 5vh 10vw;
     display: flex;
     flex-direction: column;
-    
+    @media(max-width:100rem){
+        min-height:100vh;
+        padding:2.5vh 5vw;
+    }
     @media(max-width:50rem){
-        padding:0;
+        padding:1vh 2vw;
+        min-height:120vh;
     }
     &__header{
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-size:10rem;
         font-weight:800;
         margin:5vh 0;
@@ -28,6 +32,9 @@
         margin-bottom: 10vh;
         display: flex;
         border-radius: 1rem;
+        @media(max-width:100rem){
+          margin-bottom:5vh;
+        }
         @media(max-width:50rem){
             flex-direction: column;
             margin-bottom:0;
@@ -40,6 +47,7 @@
             @media(max-width:50rem){
                 border:none;
                 box-shadow: inset 1px 1px 10px 5px rgba(49,39,127, 0.75);
+                border-radius: 1rem 1rem 0 0;
             }
         }
         &--friday{
@@ -56,6 +64,7 @@
         @media(max-width:50rem){
             border:none;
             box-shadow: inset 1px 1px 10px 5px rgba(40,221,176, 0.75);
+            border-radius:0 0 1rem 1rem;
         }
         }
         }
@@ -119,6 +128,9 @@
             height: 100%;
             text-align: center;
             transition:all.5s;
+            @media(max-width:50rem){
+                font-size:1.4rem
+            }
             
         
             &:link,
@@ -136,7 +148,7 @@
             }
         
             &:active {
-                background-color:var(--color-offBlack2);
+                background-color:whitesmoke;
             }
             &:first-child {
                 border-radius: 1rem 0 0 1rem;

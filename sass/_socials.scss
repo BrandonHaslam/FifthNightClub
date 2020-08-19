@@ -5,6 +5,14 @@ flex-direction: column;
     top:2rem;
     left:2rem;
     z-index: 100;
+    
+    @media(max-width:100rem){
+        background:black;
+        border-radius:1rem;
+        flex-direction:row;
+        left:34%;
+        top:1rem;
+    }
     @media(max-width:50rem){
         flex-direction: row;
         background: black;
@@ -19,13 +27,28 @@ flex-direction: column;
         color:white;
         font-size:3.5rem;
         margin:.5rem;
+        transition:all .5s;
         &:link,&:visited {
             text-decoration: none;
         }
         &:hover{
-            transform:scale(1.1);
-            color:var(--color-goldPrimary);
+            transition:all .5s;
+            transform:scale(1.2);
+            // color:var(--color-goldPrimary);
         }
     }
 }
 
+.blue{
+    &:hover{
+    color: rgba(49,39,127,1);
+}}
+.purple{
+    &:hover{
+   color: rgba(225,2,238,1)
+}}
+
+.green{
+    &:hover{
+    color:rgba(40,221,176, 1)}
+}
