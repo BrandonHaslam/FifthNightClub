@@ -1,0 +1,48 @@
+.event {
+    min-height: 150vh;
+    // background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(112, 112, 112));
+    background: radial-gradient(circle at 50% 50%, rgb(75, 75, 75) 5%, rgb(0, 0, 0)50%);
+    padding: 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+
+    &__card {
+        width: 100%;
+        flex: 1 0;
+        background-color: var(--color-whitePrimary);
+        margin-top: 10vh;
+        display: flex;
+        border-radius: 1rem;
+        
+        &--tuesday{
+            box-shadow: 1px 4px 15px 15px rgba(49,39,127, 0.75);
+        }
+       &--friday{
+        box-shadow: 1px 4px 15px 15px rgba(100,3,80, 0.75);
+       } 
+       &--saturday{
+        box-shadow: 1px 4px 15px 15px rgba(40,221,176, 0.75);
+       }
+    }
+
+    &__info {
+        padding: 2rem;
+        font-size: 2rem;
+        color: var(--color-offBlack);
+
+
+    }
+
+    &__img {
+        width: 25%;
+        border-radius: 1rem;
+    }
+}
+
+#tuesday {
+    background: white;
+}
+
+#friday {}
+
+#saturday {}

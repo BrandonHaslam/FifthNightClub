@@ -1,0 +1,32 @@
+:root{
+    --color-offBlack:rgb(15,15,15);
+    --color-offBlack2:rgb(30,30,30);
+
+    --color-grey-200:rgb(200, 200, 200);
+
+    --color-whitePrimary:rgb(245, 245, 245);
+    --color-whiteSecondary:rgb(220, 220, 220);
+
+    --color-goldPrimary:rgb(200, 170, 0);
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    
+    *,*::before,*::after{
+        box-sizing: inherit;
+    }
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: Helvetica, sans-serif;
+        background:var(--color-offBlack);
+        color:white;
+       display: flex;
+       position: relative;
+       flex-direction: column;
+    }
