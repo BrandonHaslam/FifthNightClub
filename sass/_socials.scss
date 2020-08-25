@@ -1,19 +1,12 @@
 .socials{
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     position:fixed;
     top:2rem;
     left:2rem;
     z-index: 100;
     
-    @media(max-width:100rem){
-        background:black;
-        border-radius:1rem;
-        flex-direction:row;
-        left:34%;
-        top:1rem;
-    }
-    @media(max-width:50rem){
+    @media(max-width:1000px){
         flex-direction: row;
         background: black;
         top:0;
@@ -28,6 +21,9 @@ flex-direction: column;
         font-size:3.5rem;
         margin:.5rem;
         transition:all .5s;
+        @media(max-width:280px){
+            margin:0;
+        }
         &:link,&:visited {
             text-decoration: none;
         }

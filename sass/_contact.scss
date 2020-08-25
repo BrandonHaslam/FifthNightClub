@@ -5,24 +5,25 @@
     color:var(--color-offBlack);
     font-weight:600;
     font-size:2rem;
-    @media(max-width:100rem){
-        padding:1vh 2vw;
-    }
-    @media(max-width:50rem){
+    @media(max-width:1000px){
         padding:1vh 2vw;
     }
     &__header{
 color:white;
 text-align: center;
-margin-bottom:2vh;
+margin:1vh 0 0 0;
 font-size:4rem;
+border-bottom:.2rem solid var(--color-whitePrimary);
     }
     
 } 
 .container {
+    color:white;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: var(--color-offBlack);
     padding: 20px;
+    box-shadow: 1px 0px 15px 15px rgba(255, 255, 255, 0.75);
+    
 }
 input[type=text],
             select,
@@ -34,21 +35,48 @@ input[type=text],
                 box-sizing: border-box;
                 margin-top: 6px;
                 margin-bottom: 16px;
-            
+              
             }
 
             input[type=submit] {
-                background-color: #4CAF50;
+                background-color: var(--color-offBlack);
+                border: 2px solid var(--color-whiteSecondary);
                 color: white;
                 padding: 12px 20px;
-                border: none;
                 border-radius: 4px;
                 cursor: pointer;
             }
 
             input[type=submit]:hover {
-                background-color: #45a049;
+                background-color: var(--color-offBlack);
             }
+// .btn {
+//     display:flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: var(--color-offBlack);
+//     color: var(--color-whitePrimary);
+//     flex: 1 0;
+//     margin: 0;
+//     padding: 1rem;
+//     font-size: 1.5rem;
+//     outline: none;
+//     border: 2px solid var(--color-whiteSecondary);
+//     height: 100%;
+//     text-align: center;
+//     transition:all.5s;
+//     &:link,
+//     &:visited {
+//         text-decoration: none;
+//     }
 
+//     &:hover {
+//         z-index:2;
+//         transition:all .5s;
+//         cursor: pointer;
+//         transform: scale(1.1);
+//         background-color: black;
+//         box-shadow: 1px 4px 20px 2px rgba(255, 255, 255, 0.75);
+//     }
         
             
