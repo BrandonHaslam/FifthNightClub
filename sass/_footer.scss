@@ -7,18 +7,18 @@
    font-size:2rem;
    padding:1rem;
    @media(max-width:1250px){
-      font-size:1.8rem;
-}
-@media(max-width:1000px){
-    font-size:1.5rem;
+       
+       height:25vh;
+       font-size:1.8rem;
     }
-    @media(max-width:850px){
-        font-size:1.2rem;
-        }
-        @media(max-width:500px){
-            font-size:1rem;
-            }
-   &__info{
+    @media(max-width:600px){
+        text-align: center;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+    
+    &__info{
+        margin: 1rem;
 
    color:white;
    &:link, &:visited{
