@@ -138,7 +138,9 @@ input[type=submit]:hover {
   border: 2px solid var(--color-whiteSecondary);
   height: 100%;
   text-align: center;
-  transition: all 0.5s; }
+  transition: all 0.25s; }
+  .btn__main {
+    border-radius: 1rem !important; }
   @media (max-width: 500px) {
     .btn {
       font-size: 1.4rem; } }
@@ -146,7 +148,7 @@ input[type=submit]:hover {
     text-decoration: none; }
   .btn:hover {
     z-index: 2;
-    transition: all .5s;
+    transition: all 0.25s;
     cursor: pointer;
     transform: scale(1.1);
     background-color: black;
@@ -179,15 +181,15 @@ input[type=submit]:hover {
 .navbar__icon {
   color: white;
   font-size: 3.5rem;
-  margin: .5rem;
-  transition: all .5s; }
+  margin: 0.5rem;
+  transition: all 0.25s; }
   @media (max-width: 280px) {
     .navbar__icon {
       margin: 0; } }
   .navbar__icon:link, .navbar__icon:visited {
     text-decoration: none; }
   .navbar__icon:hover {
-    transition: all .5s;
+    transition: all 0.25s;
     transform: scale(1.2); }
 
 .blue:hover {
@@ -214,7 +216,7 @@ input[type=submit]:hover {
       padding: 1vh 2vw;
       min-height: 120vh; } }
   .event__header {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     text-transform: uppercase;
     font-size: 8rem;
     font-weight: 800;
@@ -272,7 +274,7 @@ input[type=submit]:hover {
       .event__info {
         font-size: 1.6rem; } }
     .event__info--header {
-      font-family: 'Nunito', sans-serif;
+      font-family: "Nunito", sans-serif;
       border-bottom: 2px solid var(--color-offBlack);
       font-weight: 700;
       margin-bottom: 1rem; }
@@ -281,14 +283,14 @@ input[type=submit]:hover {
     .event__info--night {
       display: block;
       flex: 75%;
-      padding: .5rem;
+      padding: 0.5rem;
       font-weight: 300; }
     .event__info--music {
       text-align: center;
-      padding: .5rem; }
+      padding: 0.5rem; }
     .event__info--book {
       border-top: 1px solid var(--color-offBlack);
-      padding: .5rem;
+      padding: 0.5rem;
       font-weight: 600; }
   .event__img {
     width: 35%; }
@@ -329,7 +331,7 @@ input[type=submit]:hover {
       text-decoration: none; }
     .event__btn:hover {
       z-index: 2;
-      transition: all .5s;
+      transition: all 0.5s;
       cursor: pointer;
       transform: scale(1.1);
       background-color: var(--color-whiteSecondary); }
@@ -337,6 +339,8 @@ input[type=submit]:hover {
       background-color: whitesmoke; }
     .event__btn:first-child {
       border-radius: 1rem 0 0 1rem; }
+    .event__btn:not(:last-child) {
+      margin-right: -2px; }
     .event__btn:last-child {
       border-radius: 0 1rem 1rem 0; }
     .event__btn--tuesday {
@@ -386,17 +390,15 @@ input[type=submit]:hover {
   padding: 1rem; }
   @media (max-width: 1250px) {
     .footer {
+      height: 25vh;
       font-size: 1.8rem; } }
-  @media (max-width: 1000px) {
+  @media (max-width: 600px) {
     .footer {
-      font-size: 1.5rem; } }
-  @media (max-width: 850px) {
-    .footer {
-      font-size: 1.2rem; } }
-  @media (max-width: 500px) {
-    .footer {
-      font-size: 1rem; } }
+      text-align: center;
+      margin-top: 1rem;
+      flex-direction: column; } }
   .footer__info {
+    margin: 1rem;
     color: white; }
     .footer__info:link, .footer__info:visited {
       text-decoration: none; }
